@@ -1,0 +1,31 @@
+{
+  "name": "battleship",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "had to remove 'type': 'module', (add it again if tests are not working tests)",
+  "jest": {
+    "transform": {}
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "start": "webpack serve --mode=development --open",
+    "build": "NODE_ENV=production && webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "jest": "^29.7.0",
+    "postcss": "^8.4.39",
+    "postcss-loader": "^8.1.1",
+    "postcss-preset-env": "^9.6.0",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^3.4.6",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
